@@ -3,11 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adam Ardiyanto Wicaksono - Portfolio</title>
+    <title>Adam Ardiyanto Wicaksono · Backend Engineer</title>
     <meta
       name="description"
-      content="Portfolio page: about me, tech stack, projects, and contact."
+      content="Backend engineer (PHP, JavaScript): payment integrations, API orchestration, WHMCS, OpenStack automation, and reliable high-load flows. Yogyakarta, Indonesia."
     />
+    <link rel="canonical" href="https://ardiyanto.diskon.cloud/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Adam Ardiyanto Wicaksono" />
+    <meta property="og:title" content="Adam Ardiyanto Wicaksono · Backend Engineer" />
+    <meta
+      property="og:description"
+      content="Backend engineer (PHP, JavaScript): payment integrations, API orchestration, WHMCS, OpenStack automation, and reliable high-load flows."
+    />
+    <meta property="og:url" content="https://ardiyanto.diskon.cloud/" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,14 +31,15 @@
           <div class="brand-mark" aria-hidden="true">◼</div>
           <div class="brand-text">
             <div class="brand-name">Adam Ardiyanto Wicaksono</div>
-            <div class="brand-role">Software Developer</div>
+            <div class="brand-role">Backend Engineer</div>
           </div>
         </div>
 
         <nav class="nav" aria-label="Primary navigation">
           <a href="#about">About</a>
-          <a href="#tech-stack">Tech Stack</a>
+          <a href="#core-expertise">Expertise</a>
           <a href="#projects">Projects</a>
+          <a href="#system-design">Design</a>
           <a href="#contact" class="nav-cta">Contact</a>
         </nav>
       </div>
@@ -36,17 +49,19 @@
       <section class="hero" aria-label="Intro">
         <div class="hero-grid">
           <div class="hero-copy">
-            <h1>Building high-performance, user-focused applications.</h1>
+            <h1>Backend Engineer</h1>
             <p class="lead">
-              Backend-focused software developer working with <strong>PHP</strong>,
-              <strong>JavaScript</strong>, and <strong>jQuery</strong>—building
-              integrations, order flows, and maintainable systems. I ship reliable
-              web experiences for hosting and cloud products, and I am currently
-              working on a <strong>Laravel</strong> migration alongside legacy
-              stacks. Based in <strong>Yogyakarta</strong>, Indonesia.
+              Specialized in building reliable backend systems with a focus on
+              <strong>payment integration</strong>, <strong>API orchestration</strong>,
+              and <strong>high-concurrency processing</strong>.
+            </p>
+            <p class="lead tech-line" aria-label="Primary technologies">
+              <strong>PHP</strong> · <strong>JavaScript</strong> · <strong>MySQL</strong> ·
+              <strong>WHMCS</strong> · <strong>OpenStack</strong> ·
+              <strong>REST API</strong> · <strong>Webhooks</strong>
             </p>
             <div class="hero-actions">
-              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn" href="#projects">Featured work</a>
               <a class="btn btn-ghost" href="#contact">Get in touch</a>
             </div>
             <div class="hero-meta">
@@ -62,15 +77,15 @@
           </div>
 
           <aside class="hero-card" aria-label="Quick summary">
-            <h2>Quick Summary</h2>
+            <h2>At a glance</h2>
             <ul class="checklist">
-              <li>Backend: PHP, MySQL</li>
-              <li>Frontend: JavaScript, jQuery</li>
-              <li>Also familiar with: ASP.NET MVC / ASP.NET Core</li>
+              <li>Production payment flows &amp; webhook idempotency</li>
+              <li>WHMCS &amp; billing-adjacent integrations</li>
+              <li>Cloud automation (OpenStack API, token lifecycle)</li>
             </ul>
             <p class="muted">
-              Backend-focused developer working on PHP/MySQL systems, API
-              integrations, and user-focused web experiences.
+              Based in <strong>Yogyakarta</strong>, Indonesia. Depth over UI — I own
+              reliability, data consistency, and integration complexity.
             </p>
           </aside>
         </div>
@@ -78,44 +93,47 @@
 
       <section id="about" class="section">
         <div class="section-head">
-          <h2>About Me</h2>
+          <h2>About</h2>
           <p class="muted">
-            Dedicated backend-first developer specializing in PHP, JavaScript,
-            and jQuery, delivering reliable integrations and smooth UX.
+            Production systems, integrations, and operational reliability — not
+            pixel-perfect UI.
           </p>
         </div>
 
         <div class="grid-2">
           <div class="card">
-            <h3>Who I am</h3>
+            <h3>Profile</h3>
             <p>
-              Dedicated Software Developer with expertise in <strong>PHP</strong>,
-              <strong>JavaScript</strong>, and <strong>jQuery</strong>, specializing
-              in building high-performance, user-focused applications. Experienced
-              in optimizing web solutions and ensuring seamless user experiences.
+              Hands-on design and delivery of production-grade backends: payment
+              gateways, invoice validation, and cloud infrastructure automation.
             </p>
             <p>
-              Based in Indonesia, I am passionate about solving complex problems,
-              collaborating with teams, and delivering impactful software solutions.
+              Strong focus on <strong>data consistency</strong>,
+              <strong>system reliability</strong>, and handling edge cases such
+              as duplicate transactions, webhook race conditions, and concurrent
+              requests.
             </p>
           </div>
           <div class="card">
-            <h3>What I value</h3>
+            <h3>How I work</h3>
+            <p>
+              Experienced in integrating third-party APIs and building internal
+              tools to improve system efficiency and scalability.
+            </p>
             <ul class="bullets">
-              <li>High-performance and reliable web experiences</li>
-              <li>Seamless user experiences and smooth UX</li>
-              <li>Solving complex problems with practical solutions</li>
-              <li>Collaboration and delivery of impactful software</li>
+              <li>Idempotent, observable integration paths</li>
+              <li>Pragmatic schema and query design for real load</li>
+              <li>Clear ownership from design through production incidents</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="tech-stack" class="section">
+      <section id="core-expertise" class="section">
         <div class="section-head">
-          <h2>Tech Stack</h2>
+          <h2>Core expertise</h2>
           <p class="muted">
-            The main tools and technologies I use to build projects.
+            Where most of my depth and senior-level judgment shows up.
           </p>
         </div>
 
@@ -123,11 +141,23 @@
           <span class="tag" role="listitem">PHP</span>
           <span class="tag" role="listitem">JavaScript</span>
           <span class="tag" role="listitem">jQuery</span>
-          <span class="tag" role="listitem">REST APIs</span>
-          <span class="tag" role="listitem">Git</span>
-          <span class="tag" role="listitem">Laravel</span>
           <span class="tag" role="listitem">MySQL</span>
+          <span class="tag" role="listitem">WHMCS</span>
+          <span class="tag" role="listitem">OpenStack</span>
+          <span class="tag" role="listitem">REST API</span>
+          <span class="tag" role="listitem">Webhooks</span>
+          <span class="tag" role="listitem">Laravel</span>
+          <span class="tag" role="listitem">Git</span>
+        </div>
 
+        <div class="card expertise-card">
+          <ul class="bullets bullets-tight">
+            <li>Payment gateway integration (webhook, retry, idempotency)</li>
+            <li>High-concurrency system design</li>
+            <li>API integration &amp; automation (OpenStack, external services)</li>
+            <li>Database optimization (MySQL query performance)</li>
+            <li>Backend architecture &amp; system reliability</li>
+          </ul>
         </div>
       </section>
 
@@ -135,7 +165,7 @@
         <div class="section-head">
           <h2>Experience</h2>
           <p class="muted">
-            Recent roles and responsibilities.
+            Hosting and cloud products, healthcare systems, and earlier .NET work.
           </p>
         </div>
 
@@ -149,11 +179,21 @@
             <p class="muted">Yogyakarta, Indonesia · Remote</p>
             <ul class="bullets">
               <li>
-                Backend development using <strong>PHP</strong> and <strong>MySQL</strong>
+                <strong>PHP</strong> / <strong>MySQL</strong> backend for hosting and
+                cloud properties—order, member, and billing-adjacent flows.
               </li>
-              <li>Integrating landing page and order page</li>
-              <li>Integration with <strong>WHMCS</strong></li>
-              <li>Integration with another order system app</li>
+              <li>
+                <strong>WHMCS</strong> and related integrations (payments,
+                notifications, third-party order systems).
+              </li>
+              <li>
+                Hardening asynchronous callbacks: retries, validation, and
+                guarding against duplicate processing where it matters.
+              </li>
+              <li>
+                Landing and order surfaces; preparing paths toward a
+                <strong>Laravel</strong> migration.
+              </li>
             </ul>
           </article>
 
@@ -166,17 +206,15 @@
             <p class="muted">Yogyakarta, Indonesia</p>
             <ul class="bullets">
               <li>
-                Developing and maintaining healthcare management web applications
-                (hospital/clinic workflows) and implementing clean OOP
-                structure.
+                Healthcare management web apps (clinic/hospital workflows) with
+                maintainable <strong>OOP</strong> structure.
               </li>
               <li>
-                Supporting integrations and data flows for medical operations
-                features.
+                Integrations and data flows for operational and medical features,
+                including <strong>BPJS</strong>-related paths.
               </li>
               <li>
-                Improving reliability and user experience for back-office and
-                operational users.
+                Reliability and clarity for back-office and day-to-day operators.
               </li>
             </ul>
           </article>
@@ -189,7 +227,10 @@
             <p class="muted">Jul 2023 - Aug 2023 · 2 mos</p>
             <p class="muted">Kota Salatiga, Central Java, Indonesia</p>
             <ul class="bullets">
-              <li><strong>ASP.NET MVC</strong>, <strong>ASP.NET Core</strong> and +7 skills</li>
+              <li>
+                <strong>ASP.NET MVC</strong>, <strong>ASP.NET Core</strong>, and
+                adjacent engineering practices from the apprenticeship track.
+              </li>
             </ul>
           </article>
         </div>
@@ -223,180 +264,218 @@
 
       <section id="projects" class="section">
         <div class="section-head">
-          <h2>Projects</h2>
+          <h2>Featured projects</h2>
           <p class="muted">
-            Selected work across JogjaCamp and healthcare systems—maintenance,
-            integrations, and module development.
+            Problem-driven backend work: how systems behave under real traffic,
+            retries, and concurrency.
           </p>
         </div>
 
         <div class="projects">
           <article class="project card">
             <div class="project-top">
-              <h3>IDwebhost Maintenance</h3>
-              <span class="pill">Maintenance</span>
+              <h3>Payment gateway integration system</h3>
+              <span class="pill">Midtrans · WHMCS</span>
             </div>
             <p class="muted">
-              Ongoing maintenance for <strong>idwebhost.com</strong>, plus preparing
-              a migration to <strong>Laravel 12</strong> (landing page, order
-              flows, and backend integrations). Also maintaining other JogjaCamp
-              web properties.
+              <strong>Problem:</strong> handling asynchronous payment notifications
+              and preventing duplicate transaction processing.
             </p>
+            <p class="muted">
+              <strong>Solution:</strong> webhook-driven flow with idempotent
+              processing so each payment is validated and applied exactly once.
+            </p>
+            <p class="muted"><strong>Key features</strong></p>
             <ul class="bullets">
-              <li>Integrating landing page and order page flows</li>
-              <li>Maintaining <strong>diskon.com</strong></li>
-              <li>Maintaining <strong>member.idwebhost.com</strong></li>
-              <li>Maintaining <strong>order.idwebhost.com</strong></li>
-              <li>Integration with <strong>WHMCS</strong></li>
-              <li>Integration with another order system app</li>
-              <li>Preparing migration to <strong>Laravel 12</strong></li>
+              <li>Webhook handler with duplicate prevention</li>
+              <li>Payment status synchronization with WHMCS</li>
+              <li>Retry strategy for failed callbacks</li>
             </ul>
+            <p class="muted">
+              <strong>Impact:</strong> improved payment reliability and removed
+              duplicate-transaction issues in production.
+            </p>
             <div class="project-links">
+              <span class="muted">Code &amp; architecture: internal / NDA</span>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project-top">
+              <h3>Unique invoice validation engine</h3>
+              <span class="pill">Billing · MySQL</span>
+            </div>
+            <p class="muted">
+              <strong>Problem:</strong> multiple invoices with identical totals
+              causing ambiguity in payment matching.
+            </p>
+            <p class="muted">
+              <strong>Solution:</strong> dynamic unique-total generation using
+              historical transaction checks within a 60-day window.
+            </p>
+            <p class="muted"><strong>Key features</strong></p>
+            <ul class="bullets">
+              <li>Dynamic unique code generation</li>
+              <li>Concurrency-safe validation logic</li>
+              <li>Optimized MySQL queries for fast lookup</li>
+            </ul>
+            <p class="muted">
+              <strong>Impact:</strong> accurate payment identification and less
+              manual reconciliation.
+            </p>
+            <div class="project-links">
+              <span class="muted">Code &amp; architecture: internal / NDA</span>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project-top">
+              <h3>Cloud provisioning automation (OpenStack API)</h3>
+              <span class="pill">OpenStack · API orchestration</span>
+            </div>
+            <p class="muted">
+              <strong>Problem:</strong> manual server provisioning was slow and
+              error-prone.
+            </p>
+            <p class="muted">
+              <strong>Solution:</strong> automated provisioning integrating
+              Keystone and Nova APIs with token lifecycle management.
+            </p>
+            <p class="muted"><strong>Key features</strong></p>
+            <ul class="bullets">
+              <li>Token-based authentication with auto-refresh</li>
+              <li>Server lifecycle management (create, rebuild, delete)</li>
+              <li>API orchestration for cloud operations</li>
+            </ul>
+            <p class="muted">
+              <strong>Impact:</strong> shorter provisioning time and smoother
+              operations.
+            </p>
+            <div class="project-links">
+              <span class="muted">Code &amp; architecture: internal / NDA</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-head section-head-sub">
+          <h3 class="h3-section">More background</h3>
+          <p class="muted">
+            Additional delivery context—same engineer, different surfaces.
+          </p>
+        </div>
+        <div class="projects">
+          <article class="project card">
+            <div class="project-top">
+              <h3>Hosting &amp; order platforms</h3>
+              <span class="pill">JogjaCamp</span>
+            </div>
+            <p class="muted">
+              WHMCS-backed flows, <strong>Blesta</strong> registrar modules (Liquid
+              Registrar), order and member areas, and migration work toward
+              <strong>Laravel</strong>—see
               <a
                 class="link"
                 href="https://idwebhost.com/"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="IDwebhost live website link"
-              >
-                Live Demo
-              </a>
-              <span class="muted">Source code: private</span>
-            </div>
-          </article>
-
-          <article class="project card">
-            <div class="project-top">
-              <h3>CloudBaik Development</h3>
-              <span class="pill">Development</span>
-            </div>
-            <p class="muted">
-              Developing and maintaining <strong>cloudbaik.com</strong>, focusing
-              on backend integrations and improving reliability for users.
-            </p>
-            <ul class="bullets">
-              <li>Backend development and ongoing maintenance</li>
-              <li>Supporting landing page and order-related flows</li>
-              <li>Integration support for external systems</li>
-              
-            </ul>
-            <div class="project-links">
+                >idwebhost.com</a
+              >;
               <a
                 class="link"
                 href="https://cloudbaik.com/"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="CloudBaik live website link"
-              >
-                Live Demo
-              </a>
-              <span class="muted">Source code: private</span>
-            </div>
+                >cloudbaik.com</a
+              >.
+            </p>
           </article>
-
           <article class="project card">
             <div class="project-top">
-              <h3>Liquid Registrar Module (Blesta)</h3>
-              <span class="pill">Module Development</span>
+              <h3>Healthcare management systems</h3>
+              <span class="pill">PT SKI ABIYOSOFT</span>
             </div>
             <p class="muted">
-              Developing a Liquid Registrar module for <strong>Blesta</strong>,
-              including its plugins to support registrar and domain workflows.
+              Clinic/hospital workflows, integrations, and BPJS-related data
+              paths—private codebase.
             </p>
-            <ul class="bullets">
-              <li>Implementing registrar logic using Liquid Registrar</li>
-              <li>Developing and maintaining Blesta plugins</li>
-              <li>Integrating with order/domain-related backend processes</li>
-            </ul>
-            <div class="project-links">
-              <span class="muted">Source code: private</span>
-            </div>
           </article>
-
           <article class="project card">
             <div class="project-top">
-              <h3>Healthcare Management Web</h3>
-              <span class="pill">Development</span>
+              <h3>Thesis &amp; open source</h3>
+              <span class="pill">Research · C#</span>
             </div>
             <p class="muted">
-              Developing and maintaining healthcare management web applications
-              (hospital/clinic workflows) and implementing clean OOP
-              structure.
-            </p>
-            <ul class="bullets">
-              <li>Backend development and ongoing maintenance</li>
-              <li>Supporting landing page and order-related flows</li>
-              <li>Integrating healthcare workflows including <strong>BPJS</strong></li>
-              <li>Integration support for external systems</li>
-            </ul>
-            <div class="project-links">
-              <span class="muted">Source code: private</span>
-            </div>
-          </article>
-
-          <article class="project card">
-            <div class="project-top">
-              <h3>Quadcopter Path Planning (A* + JPS)</h3>
-              <span class="pill">Thesis</span>
-            </div>
-            <p class="muted">
-              Diploma thesis implementing Jump Point Search (JPS) to optimize A*
-              path planning for quadcopters and reducing computation cost.
-            </p>
-            <ul class="bullets">
-              <li>Applying JPS to improve A* with 8-connectivity planning</li>
-              <li>Testing on 3 maps with 20 trials per map</li>
-              <li>Results: JPS faster by avg. 0.12 ms (map 1), 0.07 ms (map 2), 1.49 ms (map 3)</li>
-              <li>Route length: map 1 equal (1.65 m); map 2 shorter by 0.23 m; map 3 shorter by 0.44 m</li>
-            </ul>
-            <div class="project-links">
+              Quadcopter path planning (A* + JPS)—
               <a
                 class="link"
                 href="http://eprints.upnyk.ac.id/37318/"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Open thesis repository page"
+                >thesis</a
               >
-                Thesis Link
-              </a>
+              ·
               <a
                 class="link"
                 href="https://github.com/adamardiyanto/skripsi/tree/main"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Open thesis source code repository on GitHub"
-              >
-                Source code
-              </a>
-            </div>
-          </article>
-
-          <article class="project card">
-            <div class="project-top">
-              <h3>LudoConsole (Formulatrix Bootcamp)</h3>
-              <span class="pill">Bootcamp</span>
-            </div>
-            <p class="muted">
-              Individual project during the Formulatrix Software Engineering
-              bootcamp, implemented in C#.
-            </p>
-            <ul class="bullets">
-              <li>Game implementation (Ludo)</li>
-              <li>Console-based gameplay and test utilities</li>
-              <li>Source code hosted on GitHub</li>
-            </ul>
-            <div class="project-links">
+                >code</a
+              >. Bootcamp:
               <a
                 class="link"
                 href="https://github.com/adamardiyanto/LudoConsole"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Open LudoConsole repository on GitHub"
-              >
-                Source code
-              </a>
-            </div>
+                >LudoConsole</a
+              >.
+            </p>
           </article>
+        </div>
+      </section>
+
+      <section id="system-design" class="section">
+        <div class="section-head">
+          <h2>System design &amp; API shape</h2>
+          <p class="muted">
+            How I think about backends that must not double-charge or lose state.
+          </p>
+        </div>
+
+        <div class="grid-2 grid-2-top">
+          <div class="card card-design">
+            <h3>System design approach</h3>
+            <ul class="bullets">
+              <li>Idempotent systems to prevent duplicate processing</li>
+              <li>Data consistency in concurrent environments</li>
+              <li>Reliable webhook-based architectures</li>
+              <li>Database queries tuned for performance at scale</li>
+            </ul>
+          </div>
+          <div class="card card-design">
+            <h3>API example</h3>
+            <p class="muted">
+              Illustrative webhook payload—handled with validation and
+              idempotent processing.
+            </p>
+            <pre class="code-sample" tabindex="0"><code>POST /api/payment/webhook
+
+{
+  "order_id": "INV-20260324-001",
+  "status": "settlement"
+}</code></pre>
+          </div>
+        </div>
+
+        <div class="card card-design design-outcomes">
+          <h3>Outcomes I ship</h3>
+          <p class="muted">
+            Repeatedly in production—not buzzwords.
+          </p>
+          <ul class="bullets bullets-tight">
+            <li>Production-ready payment flows with webhook processing</li>
+            <li>Invoice validation engine to prevent duplicate transactions</li>
+            <li>Cloud infrastructure automation via OpenStack API</li>
+          </ul>
         </div>
       </section>
 
@@ -404,7 +483,7 @@
         <div class="section-head">
           <h2>Contact</h2>
           <p class="muted">
-            Want to collaborate? Send me a message.
+            Prefer email — use the form below or the direct link.
           </p>
         </div>
 

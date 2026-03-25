@@ -183,6 +183,12 @@ body {
   margin-top: 10px;
 }
 
+.lead.tech-line {
+  margin-top: 14px;
+  font-size: 0.98rem;
+  letter-spacing: 0.02em;
+}
+
 .hero-actions {
   display: flex;
   gap: 12px;
@@ -270,17 +276,70 @@ body {
   font-size: 1.6rem;
 }
 
+.section-head-sub {
+  margin-top: 36px;
+  margin-bottom: 14px;
+}
+
+.h3-section {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.expertise-card {
+  margin-top: 18px;
+}
+
+.expertise-card > .bullets:first-child {
+  margin-top: 0;
+}
+
+.bullets-tight li {
+  margin: 6px 0;
+}
+
+.code-sample {
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.35);
+  overflow-x: auto;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.code-sample code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  white-space: pre;
+}
+
 .card {
   background: rgba(255, 255, 255, 0.11);
   border: 1px solid rgba(255, 255, 255, 0.23);
   border-radius: var(--radius);
-  padding: 18px;
+  padding: 16px 18px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
     border-color 180ms ease;
+}
+
+/* Reset UA h3 margins inside cards — avoids large gap above titles */
+.card h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.project-top h3,
+.experience-top h3 {
+  margin-bottom: 0;
 }
 
 .card:hover {
@@ -312,6 +371,55 @@ body {
 
 .grid-2 .card {
   height: 100%;
+}
+
+/* Natural card heights — avoids a short column stretching with empty space */
+.grid-2-top {
+  align-items: start;
+}
+
+.grid-2-top .card {
+  height: auto;
+}
+
+/* System design + API: tighter vertical rhythm */
+.card-design > h3 {
+  margin-bottom: 0.4rem;
+}
+
+.card-design .muted + .code-sample {
+  margin-top: 0.5rem;
+}
+
+.design-outcomes {
+  margin-top: 14px;
+}
+
+.design-outcomes > .bullets {
+  margin-top: 0.35rem;
+}
+
+/* Kill default <p> margins inside cards (was adding large gaps under h3) */
+.card p {
+  margin: 0 0 0.65rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.card > h3 + p,
+.card > .project-top + p,
+.card > .experience-top + p {
+  margin-top: 0;
+}
+
+.card > h3 + .bullets {
+  margin-top: 0.35rem;
+}
+
+section#system-design {
+  padding-bottom: 34px;
 }
 
 .checklist {
@@ -495,6 +603,9 @@ main > section:nth-child(6) {
 main > section:nth-child(7) {
   animation-delay: 540ms;
 }
+main > section:nth-child(8) {
+  animation-delay: 720ms;
+}
 
 @media (prefers-reduced-motion: reduce) {
   main > section {
@@ -526,6 +637,14 @@ main > section:nth-child(7) {
   }
   .brand {
     min-width: unset;
+  }
+  .nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .nav a {
+    padding: 8px 10px;
+    font-size: 0.9rem;
   }
 }
 
